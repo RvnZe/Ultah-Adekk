@@ -58,7 +58,6 @@
     button{font:600 .95rem 'DM Sans',sans-serif;border:0;cursor:pointer;border-radius:999px;padding:14px 21px;transition:transform .2s,box-shadow .2s}
     button:hover{transform:translateY(-2px)}
     .primary{background:var(--rose);color:white;box-shadow:0 10px 24px #d96c8b35}
-    .secondary{background:#fffafc;color:var(--deep);border:1px solid #edcbd6}
     footer{text-align:center;padding:8px 0 38px;color:#a58793;font-size:.8rem;line-height:1.8}
     .toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,20px);background:#63384a;color:white;padding:12px 18px;border-radius:999px;font-size:.88rem;opacity:0;pointer-events:none;transition:.25s;z-index:10;box-shadow:0 8px 28px #63384a30}
     .toast.show{opacity:1;transform:translate(-50%,0)}
@@ -120,9 +119,7 @@
         <p class="final-line">“Dunia boleh ramai, tapi semoga adek selalu punya tempat untuk pulang dan bercerita.”</p>
         <div class="actions">
           <button class="primary" id="celebrate">Rayakan hari ini ✨</button>
-          <button class="secondary" id="music">♫ Putar musik</button>
         </div>
-        <p style="font-size:.76rem;margin-top:15px;opacity:.8">Musik hanya dimulai setelah tombol ditekan.</p>
       </div>
     </section>
     <footer>
@@ -131,9 +128,7 @@
     </footer>
   </main>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <audio id="song" loop preload="none">
-    <!-- Ganti URL ini dengan link file musik yang memang boleh kamu gunakan. -->
-  </audio>
+  
   <script>
     const floating = document.getElementById('floating');
     const hearts = ['♡','♥','✧','୨୧','❀'];
@@ -168,21 +163,6 @@
         setTimeout(() => piece.remove(), 3700);
       }
       showToast('Happy birthday, Aulia! Semoga bahagia selalu. 💗');
-    });
-    const song = document.getElementById('song');
-    const musicButton = document.getElementById('music');
-    musicButton.addEventListener('click', async () => {
-      if (!song.src) {
-        showToast('Tambahkan URL musik di bagian audio HTML dulu 🎵');
-        return;
-      }
-      if (song.paused) {
-        try { await song.play(); musicButton.textContent = 'Ⅱ Jeda musik'; }
-        catch { showToast('Musik belum bisa diputar. Periksa URL audionya.'); }
-      } else {
-        song.pause();
-        musicButton.textContent = '♫ Putar musik';
-      }
     });
   </script>
 </body>
