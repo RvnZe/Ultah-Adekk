@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff4f6">
+  <meta name="description" content="Surat kecil penuh cinta untuk Aulia Ramadhani di hari ulang tahunnya yang ke-20.">
+  <title>Happy 20th Birthday, Aulia 🤍</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--pink:#f5a9bd;--rose:#d96c8b;--deep:#783c53;--ink:#49313b;--muted:#876e79;--paper:#fffaf9;--line:#f4dce4}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:'DM Sans',sans-serif;color:var(--ink);background:linear-gradient(145deg,#fff8f8 0%,#fff0f4 48%,#fff9f2 100%);overflow-x:hidden}
+    body:before,body:after{content:"";position:fixed;border-radius:50%;filter:blur(2px);pointer-events:none;z-index:-1}
+    body:before{width:300px;height:300px;background:#ffdce7aa;top:-100px;left:-100px}
+    body:after{width:360px;height:360px;background:#ffe8d5aa;right:-150px;bottom:-150px}
+    .floating{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+    .float-heart{position:absolute;bottom:-40px;opacity:0;color:#e58aa5;animation:floatUp linear infinite}
+    @keyframes floatUp{to{transform:translateY(-115vh) rotate(35deg);opacity:0}}
+    .wrap{position:relative;z-index:1;width:min(100% - 32px,900px);margin:auto}
+    header{min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:72px 0 54px}
+    .hero{max-width:720px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border:1px solid #f1cfda;border-radius:999px;background:#ffffffa8;color:var(--rose);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+    h1,h2{font-family:'Playfair Display',serif;font-weight:600}
+    h1{font-size:clamp(3rem,9vw,6.5rem);line-height:.98;letter-spacing:-.045em;margin:26px 0 20px;color:var(--deep)}
+    h1 span{display:block;color:var(--rose);font-style:italic}
+    .hero p{font-size:clamp(1rem,2.5vw,1.16rem);line-height:1.8;color:var(--muted);max-width:550px;margin:0 auto}
+    .name-tag{margin:24px 0 0;font-weight:700;color:var(--deep);letter-spacing:.04em}
+    .scroll-cue{margin-top:46px;color:#b17d90;font-size:.8rem;letter-spacing:.13em;text-transform:uppercase}
+    .scroll-cue span{display:block;font-size:1.4rem;margin-top:8px;animation:bob 1.6s ease-in-out infinite}
+    @keyframes bob{50%{transform:translateY(7px)}}
+    .section{padding:30px 0 78px}
+    .section-heading{text-align:center;margin-bottom:28px}
+    .section-heading .mini{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--rose);font-weight:700}
+    h2{font-size:clamp(2rem,5vw,3.1rem);margin:10px 0;color:var(--deep)}
+    .section-heading p{color:var(--muted);line-height:1.7;margin:0 auto;max-width:530px}
+    .letter{position:relative;background:#fffdfbf0;border:1px solid #f3dce4;border-radius:28px;padding:clamp(24px,6vw,58px);box-shadow:0 22px 70px #b55e7814}
+    .letter:before{content:"“";position:absolute;top:4px;right:24px;font-family:'Playfair Display',serif;font-size:7rem;line-height:1;color:#f9e3e9}
+    .letter p{position:relative;font-size:1rem;line-height:1.95;color:#705661;margin:0 0 18px}
+    .letter .opening{font-family:'Playfair Display',serif;font-size:1.55rem;line-height:1.4;color:var(--deep);margin-bottom:24px}
+    .letter .closing{margin-top:28px;color:var(--deep);font-weight:700}
+    .signature{font-family:'Playfair Display',serif;font-style:italic;color:var(--rose);font-size:1.5rem;margin-top:5px}
+    .promise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:25px}
+    .promise{padding:23px 18px;border:1px solid var(--line);background:#ffffffb8;border-radius:20px;text-align:center}
+    .promise .icon{font-size:1.8rem}
+    .promise h3{font-size:.98rem;color:var(--deep);margin:12px 0 7px}
+    .promise p{font-size:.87rem;line-height:1.65;color:var(--muted);margin:0}
+    .wish{padding:42px 24px;text-align:center;border-radius:28px;background:linear-gradient(135deg,#f9dce5,#fff0e7);border:1px solid #f4d2dd}
+    .wish .big-heart{font-size:2.5rem;animation:pulse 1.8s ease-in-out infinite}
+    @keyframes pulse{50%{transform:scale(1.12)}}
+    .wish h2{margin:12px 0}
+    .wish p{max-width:570px;margin:0 auto;color:#805968;line-height:1.85}
+    .wish .final-line{margin-top:20px;font-family:'Playfair Display',serif;font-size:1.25rem;font-style:italic;color:var(--deep)}
+    .actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+    button{font:600 .95rem 'DM Sans',sans-serif;border:0;cursor:pointer;border-radius:999px;padding:14px 21px;transition:transform .2s,box-shadow .2s}
+    button:hover{transform:translateY(-2px)}
+    .primary{background:var(--rose);color:white;box-shadow:0 10px 24px #d96c8b35}
+    .secondary{background:#fffafc;color:var(--deep);border:1px solid #edcbd6}
+    footer{text-align:center;padding:8px 0 38px;color:#a58793;font-size:.8rem;line-height:1.8}
+    .toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,20px);background:#63384a;color:white;padding:12px 18px;border-radius:999px;font-size:.88rem;opacity:0;pointer-events:none;transition:.25s;z-index:10;box-shadow:0 8px 28px #63384a30}
+    .toast.show{opacity:1;transform:translate(-50%,0)}
+    .confetti{position:fixed;top:-15px;width:8px;height:12px;z-index:20;pointer-events:none;animation:fall 2.8s linear forwards}
+    @keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:.1}}
+    @media(max-width:650px){header{min-height:84svh;padding-top:55px}.promise-grid{grid-template-columns:1fr}.promise{display:flex;text-align:left;gap:15px;align-items:center;padding:18px}.promise .icon{min-width:40px}.promise h3{margin:0 0 5px}.letter{border-radius:22px}.section{padding-bottom:58px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="floating" id="floating" aria-hidden="true"></div>
+  <main class="wrap">
+    <header>
+      <div class="hero">
+        <div class="eyebrow">✦ A little letter, just for you ✦</div>
+        <h1>Happy Birthday,<span>My Aulia.</span></h1>
+        <p>Untuk seseorang yang sudah melewati banyak hal, tapi tetap terus melangkah. Hari ini, dunia punya alasan ekstra untuk merayakan kamu. 🤍</p>
+        <div class="name-tag">AULIA RAMADHANI · 20TH BIRTHDAY</div>
+        <div class="scroll-cue">Ada sesuatu buat adek <span>↓</span></div>
+      </div>
+    </header>
+
+    <section class="section" id="letter">
+      <div class="section-heading">
+        <div class="mini">From my heart</div>
+        <h2>Surat kecil untuk adek</h2>
+        <p>Nggak semua hal bisa disampaikan dengan sempurna. Tapi abang mau coba, khusus buat adek. 💌</p>
+      </div>
+      <article class="letter">
+        <p class="opening">Selamat ulang tahun, sayangkuu, cintakuuu. 🫶</p>
+        <p>Selamat yaa, adek, udah 20 tahun hari ini. Makasih ya, adek, udah bertahan selama ini. Pasti adek udah ngelewatin banyak hal, kan? Dari sedih, susah, senang, naik, turun, semuanya udah banyak adek lewati.</p>
+        <p>Apalagi sejak masuk kuliah, adek punya banyak kegiatan, ke sana kemari, terus berusaha menjalani semuanya. Pasti capek banget, ya, sayang. Kalau adek capek, cerita ke abang, yaa. Nggak harus selalu terlihat kuat dan nggak harus menghadapi semuanya sendirian. Abang bakal selalu berusaha ada buat adek. 🤍</p>
+        <p>Harapan abang buat adek di umur yang baru ini, semoga adek selalu sehat. Jaga pola makan, yaa, sayang. Jangan pedas-pedas terus. Abang nggak mau adek sakit perut kayak kemarin lagi. Jadi, janji buat lebih sayang sama diri sendiri juga, yaa. 🫶</p>
+        <p>Semoga semua yang adek impikan bisa tercapai satu per satu. Semoga kuliahnya dilancarkan, urusannya dimudahkan, langkahnya selalu diberi jalan, dan hal-hal baik datang di waktu yang tepat.</p>
+        <p>Kalau ada apa-apa, jangan dipendam sendiri, ya, adek. Cerita sama abang. Kita hadapi sama-sama. Adek nggak harus punya semua jawabannya sekarang. Pelan-pelan aja, yang penting adek nggak merasa sendirian.</p>
+        <p class="closing">Selamat ulang tahun ke-20, sayangku, Aulia Ramadhani. 🎊🤍</p>
+        <div class="signature">Dari abang, yang selalu mendoakan adek.</div>
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div class="mini">A little reminder</div>
+        <h2>Hal yang abang harapkan</h2>
+        <p>Bukan supaya adek jadi sempurna. Abang cuma pengin adek baik-baik aja, hari ini dan seterusnya.</p>
+      </div>
+      <div class="promise-grid">
+        <div class="promise"><div class="icon">🌷</div><div><h3>Jaga diri baik-baik</h3><p>Makan teratur, istirahat cukup, dan jangan abaikan diri sendiri saat lagi sibuk.</p></div></div>
+        <div class="promise"><div class="icon">🫂</div><div><h3>Nggak harus kuat terus</h3><p>Kalau capek, sedih, atau bingung, adek boleh cerita dan minta ditemani.</p></div></div>
+        <div class="promise"><div class="icon">✨</div><div><h3>Terus kejar impian</h3><p>Langkah kecil tetap berarti. Semoga satu per satu impian adek jadi nyata.</p></div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wish">
+        <div class="big-heart">💗</div>
+        <h2>For your 20th chapter</h2>
+        <p>Semoga umur 20 jadi awal dari banyak cerita indah. Semoga adek lebih sering tertawa, punya keberanian buat mencoba hal baru, dipertemukan dengan banyak kebaikan, dan selalu punya alasan untuk bangga pada diri sendiri.</p>
+        <p class="final-line">“Dunia boleh ramai, tapi semoga adek selalu punya tempat untuk pulang dan bercerita.”</p>
+        <div class="actions">
+          <button class="primary" id="celebrate">Rayakan hari ini ✨</button>
+          <button class="secondary" id="music">♫ Putar musik</button>
+        </div>
+        <p style="font-size:.76rem;margin-top:15px;opacity:.8">Musik hanya dimulai setelah tombol ditekan.</p>
+      </div>
+    </section>
+    <footer>
+      Dibuat dengan banyak doa dan sedikit keberanian untuk mengungkapkan semuanya. 🤍<br>
+      Happy 20th Birthday, Aulia Ramadhani · Made with love
+    </footer>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <audio id="song" loop preload="none">
+    <!-- Ganti URL ini dengan link file musik yang memang boleh kamu gunakan. -->
+  </audio>
+  <script>
+    const floating = document.getElementById('floating');
+    const hearts = ['♡','♥','✧','୨୧','❀'];
+    for (let i = 0; i < 24; i++) {
+      const el = document.createElement('span');
+      el.className = 'float-heart';
+      el.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+      el.style.left = Math.random() * 100 + '%';
+      el.style.animationDuration = (9 + Math.random() * 13) + 's';
+      el.style.animationDelay = (-Math.random() * 18) + 's';
+      el.style.fontSize = (12 + Math.random() * 18) + 'px';
+      floating.appendChild(el);
+    }
+    const toast = document.getElementById('toast');
+    let toastTimer;
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.remove('show'), 2600);
+    }
+    document.getElementById('celebrate').addEventListener('click', () => {
+      const colors = ['#e58aa5','#f4c6d4','#e8b77d','#d8a7c0','#fff'];
+      for (let i = 0; i < 90; i++) {
+        const piece = document.createElement('i');
+        piece.className = 'confetti';
+        piece.style.left = Math.random() * 100 + 'vw';
+        piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+        piece.style.animationDelay = Math.random() * .7 + 's';
+        piece.style.transform = `rotate(${Math.random() * 360}deg)`;
+        document.body.appendChild(piece);
+        setTimeout(() => piece.remove(), 3700);
+      }
+      showToast('Happy birthday, Aulia! Semoga bahagia selalu. 💗');
+    });
+    const song = document.getElementById('song');
+    const musicButton = document.getElementById('music');
+    musicButton.addEventListener('click', async () => {
+      if (!song.src) {
+        showToast('Tambahkan URL musik di bagian audio HTML dulu 🎵');
+        return;
+      }
+      if (song.paused) {
+        try { await song.play(); musicButton.textContent = 'Ⅱ Jeda musik'; }
+        catch { showToast('Musik belum bisa diputar. Periksa URL audionya.'); }
+      } else {
+        song.pause();
+        musicButton.textContent = '♫ Putar musik';
+      }
+    });
+  </script>
+</body>
+</html>
